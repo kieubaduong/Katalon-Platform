@@ -4,4 +4,49 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'duong.kieu@katalon.com'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Oden@123'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'password'</initValue>
+      <name>grant_type</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsia2l0Il0sImthdE9uZUp3dCI6ImV5SjBlWEFpT2lKS1YxUWlMQ0poYkdjaU9pSlNVekkxTmlKOS5leUp6ZFdJaU9pSmtkVzl1Wnk1cmFXVjFRR3RoZEdGc2IyNHVZMjl0SWl3aWRYQnVJam9pTVRJMk1EQXpNQ0lzSW1keWIzVndjeUk2V3lKVlUwVlNJbDBzSW5OMFlYUjFjeUk2SWxaRlVrbEdTVVZFSWl3aVoybDJaVzVmYm1GdFpTSTZJa3RwWlhVaUxDSm1ZVzFwYkhsZmJtRnRaU0k2SWtKaElFUjFiMjVuSWl3aVpXMWhhV3dpT2lKa2RXOXVaeTVyYVdWMVFHdGhkR0ZzYjI0dVkyOXRJaXdpWlcxaGFXeGZkbVZ5YVdacFpXUWlPblJ5ZFdVc0ltTnlaV0YwWldSZllYUWlPakUyT0Rnek5qVTVOamdzSW5Wd1pHRjBaV1JmWVhRaU9qRTJPRGc1T0RJeE16RXNJbUZ0Y2lJNld5SndkMlFpWFN3aWFXRjBJam94TmpnNE9UZ3lNVE0zTENKbGVIQWlPakUyT0RrMU9EWTVNemNzSW1wMGFTSTZJbVpoT1dZeU9XRmxMV0poTURrdE5HUmxaUzA0WlRnd0xUZGhNbVUxTVRrMk5EY3lNaUlzSW1semN5STZJbXRoZEdGc2IyNHRZWFYwYUNKOS5XWjNrZThfM2xyVzBWYUhWMHhtU2Z3TUhhSjlSaVZPdHdxZlU2N1d1VXRmSkpaSFZNNV9PNXdBNmJVWmdqUVQ0MmZHYWJPRWpWbXMtMUo5b1Z2NExmVXgxTlVGVjV0aUl4QVozS0tTTHg0ZDhiQXpTZTlxTTJnOFQ4dE05dDIwMVpjZjJyTVE0VjBQd1ZwZGNFSEtpelVnMGtSZ3NsNER2M2ZuUDV2dkNfbDBnV1hBS0h2VzhObC1kTDFrQTB4ZzAtZUJaZmduWkZwMkZpSFRDNzZnUXJDemlFTVF4cWFvWmRBZXhQVzlqb0tvTFdxMWZhaU1TcmhCLXNzbVR0RmZ1OUMtbGJ4THE1MFlyUXZEOEtQcldIVWJRX01PdUJXdU8zUlFVZmp5cFh6UFJsbVJ3c285aWctQ2h0bEJad0VFTU4tQzNIRlQ3OXlFXzYzU09Ka0NjdHciLCJ1c2VyX25hbWUiOiJkdW9uZy5raWV1QGthdGFsb24uY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImthdE9uZVVzZXJJZCI6MTI2MDAzMCwiZXhwIjoxNjg5NTg2OTM3LCJqdGkiOiIyMTdkODI4Yi03ZDc3LTRhZGYtYTMxNi00ZDY0NjNkNzM3OWQiLCJjbGllbnRfaWQiOiJraXQifQ.V-l54DuMM6Zn2vCSLdq4v87nQm7pRoKXvPc9EBu4R6SxaDb4K1cTyLF4DM0iGREFH6NCgEv-MNZ4YINQlSAylnBFTatllt8ou05ZEFtieygYTuWhH1NbzDfcqZffcmdZK9oVYXTp_5fTUf8E6yxwLLigr53Qpozf7IPp39ToNLUDMRhiVVFtkzMmmeiZttXfl5-YWUWphjS9nl7UGNQqPkoQBBaWIERUp7G0sy0nrbLIXNxUeewWkuYJPlMwFqAieOjeiFkp_Ll5FXsi_jiC2FlbYq_8ltJ6Z3nZk3YHZkcHz-ToxCqa7MJsYaPzKjDDl1v81DXPa1yyG-RiyrO4Bg'</initValue>
+      <name>access_token</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://testops.katalon.io'</initValue>
+      <name>base_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1174806'</initValue>
+      <name>project_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1155688'</initValue>
+      <name>team_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'api/v1/users/me'</initValue>
+      <name>get_me</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'api/v1/smart/run'</initValue>
+      <name>schedule</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

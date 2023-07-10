@@ -16,20 +16,40 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
+import groovy.json.JsonSlurper as JsonSlurper
 
-WebUI.openBrowser('')
+ResponseObject res = WS.sendRequest(findTestObject('login', [('username') : GlobalVariable.username, ('password') : GlobalVariable.password]))
 
-WebUI.navigateToUrl('https://testops.katalon.io/team/1155688/project/1174806')
+def jsonSlurper = new JsonSlurper()
 
-WebUI.setText(findTestObject('Object Repository/Page_Katalon TestOps/input_Sign Up_username'), 'duong.kieu@katalon.com')
+def jsonObject = jsonSlurper.parseText(res.getResponseBodyContent())
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Katalon TestOps/input_Sign Up_password'), 'gGCX2cYakrNepxk6voRFpA==')
+String accessToken = jsonObject.access_token
 
-WebUI.sendKeys(findTestObject('Object Repository/Page_Katalon TestOps/input_Sign Up_password'), Keys.chord(Keys.ENTER))
+GlobalVariable.access_token = accessToken
 
-WebUI.click(findTestObject('Object Repository/Page_Katalon TestOps/button_Sign in'))
+res = WS.sendRequest(findTestObject('get_user_info'))
 
-WebUI.click(findTestObject('Object Repository/Page_Dashboard - Katalon TestOps/span_Getting started'))
+jsonObject = jsonSlurper.parseText(res.getResponseBodyContent())
+def projects = jsonObject.projects
 
-WebUI.closeBrowser()
+String targetName = "Katalon Platform"
+def projectId = null
+def teamId = null
+
+projects.each { obj ->
+	if (obj.name == targetName) {
+		projectId = obj.id
+		teamId = obj.teamId
+		return
+	}
+}
+
+GlobalVariable.project_id =  projectId
+GlobalVariable.team_id = teamId
+
+println accessToken
+
+
 
