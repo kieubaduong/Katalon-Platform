@@ -32,24 +32,36 @@ GlobalVariable.access_token = accessToken
 res = WS.sendRequest(findTestObject('get_user_info'))
 
 jsonObject = jsonSlurper.parseText(res.getResponseBodyContent())
+
 def projects = jsonObject.projects
 
-String targetName = "Katalon Platform"
+String targetName = 'Katalon Platform'
+
 def projectId = null
+
 def teamId = null
 
-projects.each { obj ->
-	if (obj.name == targetName) {
-		projectId = obj.id
-		teamId = obj.teamId
-		return
-	}
-}
+projects.each({ def obj ->
+        if (obj.name == targetName) {
+            projectId = obj.id
 
-GlobalVariable.project_id =  projectId
+            teamId = obj.teamId
+
+            return 
+        }
+    })
+
+GlobalVariable.project_id = projectId
+
 GlobalVariable.team_id = teamId
 
-println accessToken
+res = WS.sendRequest(findTestObject('get_test_run_list'))
 
+def content = jsonSlurper.parseText(res.getResponseBodyContent()).content
 
+GlobalVariable.schedule_test_id = content[0].id
+
+res = WS.sendRequest(findTestObject('execute_schedule_test'))
+
+println jsonSlurper.parseText(res.getResponseBodyContent())
 

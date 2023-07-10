@@ -49,4 +49,24 @@
       <initValue>'api/v1/smart/run'</initValue>
       <name>schedule</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'546350'</initValue>
+      <name>schedule_test_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'api/v1/users/me'</initValue>
+      <name>get_user_info_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'api/v1/search'</initValue>
+      <name>search_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'oauth/token'</initValue>
+      <name>login_url</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

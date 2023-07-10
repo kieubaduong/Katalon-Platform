@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>get_user_info</name>
+   <name>execute_schedule_test</name>
    <tag></tag>
-   <elementGuidId>7680b862-c82d-4727-b696-b85081ada0f8</elementGuidId>
+   <elementGuidId>ec2d5951-a54c-42cf-9ec5-c910b0823e4e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -19,33 +19,21 @@
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;,
-  &quot;parameters&quot;: []
-}</httpBodyContent>
-   <httpBodyType>form-data</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>multipart/form-data</value>
-      <webElementGuid>aaafa987-153b-45b4-b48c-88f4c23a4420</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.access_token}</value>
-      <webElementGuid>43c6353f-894b-441b-a3ef-37e3f033da76</webElementGuid>
+      <webElementGuid>288719cd-5485-40a8-b950-d2bd4bacee78</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.base_url}/${GlobalVariable.get_user_info_url}</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${GlobalVariable.base_url}/api/v1/run-configurations/${GlobalVariable.schedule_test_id}/execute</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

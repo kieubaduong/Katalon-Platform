@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>schedule_test_run</name>
+   <name>get_test_run_list</name>
    <tag></tag>
-   <elementGuidId>bcd6af66-5108-4d39-9f50-15575c62443c</elementGuidId>
+   <elementGuidId>586c5ec7-8e6d-49ee-9164-61ca9171c3cd</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -27,13 +27,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.access_token}</value>
-      <webElementGuid>c86b20d8-0c23-4bb8-bd36-536ad540a097</webElementGuid>
+      <webElementGuid>6192aafe-9029-499e-ac44-be69d7838c7d</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.base_url}smart-scheduler/schedule</restUrl>
+   <restUrl>${GlobalVariable.base_url}/${GlobalVariable.search_url}?q={&quot;type&quot;:&quot;RunConfiguration&quot;,&quot;conditions&quot;:[{&quot;key&quot;:&quot;Project.id&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;value&quot;:&quot;${GlobalVariable.project_id}&quot;}],&quot;pagination&quot;:{&quot;page&quot;:0,&quot;size&quot;:30,&quot;sorts&quot;:[&quot;updatedAt,desc&quot;]}}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -62,7 +62,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://testops.katalon.io/oauth/token</restUrl>
+   <restUrl>${GlobalVariable.base_url}/${GlobalVariable.login_url}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
