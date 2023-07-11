@@ -83,5 +83,3 @@ println jsonSlurper.parseText(res.getResponseBodyContent())
 
 
 
-
-

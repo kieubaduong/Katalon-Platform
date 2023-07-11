@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>51abb7b1-efff-4e61-a60e-884fe191a72c</webElementGuid>
+      <webElementGuid>8dd611e0-3588-4783-aff6-cfe196708919</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>name</name>
       <type>Main</type>
       <value>username</value>
-      <webElementGuid>41dfa011-64c4-4bb2-9d24-f726b70e3179</webElementGuid>
+      <webElementGuid>ae9f07b0-59c2-4588-8c27-d9419cfbcab6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Username</value>
-      <webElementGuid>6af02692-f6b6-49d9-b5b8-9b2ecd6f20a2</webElementGuid>
+      <webElementGuid>ee010a03-0598-43d6-969c-9d726685867e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>type</name>
       <type>Main</type>
       <value>email</value>
-      <webElementGuid>445d7ff9-ca20-4ea8-aa48-1648c3039da8</webElementGuid>
+      <webElementGuid>e97b8ac3-ed48-4b9d-b14a-e6e3a5cb51d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>class</name>
       <type>Main</type>
       <value>login-field form-control</value>
-      <webElementGuid>30827cb4-8d87-410c-95ea-eafea603f5bc</webElementGuid>
+      <webElementGuid>5c7adada-3256-4a53-8cf2-808a69542d59</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;main-content&quot;)/div[@class=&quot;login-page flex-fill align-items-center mx-0 row&quot;]/div[@class=&quot;col-sm-8 offset-sm-4 col-md-7 offset-md-5 col-lg-4 offset-lg-5&quot;]/div[@class=&quot;login-card mx-auto shadow-none card&quot;]/div[@class=&quot;card-body&quot;]/form[@class=&quot;login-form m-0&quot;]/div[@class=&quot;form-group&quot;]/input[@class=&quot;login-field form-control&quot;]</value>
-      <webElementGuid>ec0af3af-57e6-4fb0-ae41-fc61c828f970</webElementGuid>
+      <webElementGuid>9004a32b-1844-4d0c-8880-92205b17293c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@name='username']</value>
-      <webElementGuid>daafa9fc-272b-454a-809a-fa943990eb0e</webElementGuid>
+      <webElementGuid>efcffdea-e344-43ee-8938-6ed72343b0e4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='main-content']/div/div/div/div[2]/form/div/input</value>
-      <webElementGuid>82031d78-95eb-4e89-a5db-846855eac433</webElementGuid>
+      <webElementGuid>be8e640b-6ee0-4766-860c-1ae6e187d16b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//input</value>
-      <webElementGuid>72fa4936-059b-43c3-a271-d34016b392d5</webElementGuid>
+      <webElementGuid>d13876b5-c905-4710-92b0-2007c05a0e6a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +94,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@name = 'username' and @placeholder = 'Username' and @type = 'email']</value>
-      <webElementGuid>550bde16-69e3-4223-9c70-699e263fcac9</webElementGuid>
+      <webElementGuid>7520b575-ecaf-48b4-a93b-9cab7f4e8ee8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

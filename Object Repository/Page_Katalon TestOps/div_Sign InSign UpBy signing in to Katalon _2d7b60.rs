@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Sign InSign UpBy signing in to Katalon _2d7b60</name>
+   <tag></tag>
+   <elementGuidId>733d1091-6c73-4576-b485-662c3e45ab0e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main-content']/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.login-card.mx-auto.shadow-none.card</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>982269dc-2b8f-44bc-bbe4-008aa8b5a645</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>login-card mx-auto shadow-none card</value>
+      <webElementGuid>08f0ecb3-04a5-436c-a628-64873a863c66</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sign InSign UpBy signing in to Katalon Platform, you agree to theKatalon Terms of Service and Privacy PolicyRemember meSign inForgot your password?</value>
+      <webElementGuid>80655cb4-1379-4005-9e43-72f06e66bb0c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main-content&quot;)/div[@class=&quot;login-page flex-fill align-items-center mx-0 row&quot;]/div[@class=&quot;col-sm-8 offset-sm-4 col-md-7 offset-md-5 col-lg-4 offset-lg-5&quot;]/div[@class=&quot;login-card mx-auto shadow-none card&quot;]</value>
+      <webElementGuid>5a6f81cf-3960-4224-8acf-f6ffcb44fcc3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main-content']/div/div/div</value>
+      <webElementGuid>fbb34234-ce52-46c5-b33e-4213b40e5d34</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div</value>
+      <webElementGuid>3b09b4ad-3dd3-4ae8-be92-433ba91af907</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Sign InSign UpBy signing in to Katalon Platform, you agree to theKatalon Terms of Service and Privacy PolicyRemember meSign inForgot your password?' or . = 'Sign InSign UpBy signing in to Katalon Platform, you agree to theKatalon Terms of Service and Privacy PolicyRemember meSign inForgot your password?')]</value>
+      <webElementGuid>3282db13-392a-4363-9077-c27d9567b4f4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
