@@ -29,8 +29,6 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_Katalon TestOps/in
 
 WebUI.click(findTestObject('Object Repository/Page_Katalon TestOps/button_Sign in'))
 
-WebUI.setViewPortSize(2880, 1457)
-
 WebUI.takeScreenshotAsCheckpoint('Login Flow Test Run')
 
 WebUI.closeBrowser()
