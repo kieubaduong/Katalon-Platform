@@ -33,7 +33,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.base_url}/${GlobalVariable.search_url}?q={&quot;type&quot;:&quot;RunConfiguration&quot;,&quot;conditions&quot;:[{&quot;key&quot;:&quot;Project.id&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;value&quot;:&quot;${GlobalVariable.project_id}&quot;}],&quot;pagination&quot;:{&quot;page&quot;:0,&quot;size&quot;:30,&quot;sorts&quot;:[&quot;updatedAt,desc&quot;]}}</restUrl>
+   <restUrl>${GlobalVariable.base_url}/${GlobalVariable.search_url}?q=${GlobalVariable.queryProjectsParam}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

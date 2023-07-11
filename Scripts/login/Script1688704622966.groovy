@@ -55,7 +55,17 @@ GlobalVariable.project_id = projectId
 
 GlobalVariable.team_id = teamId
 
+String temp = projectId.toString()
+
+String queryProjectsParam = '{"type":"RunConfiguration","conditions":[{"key":"Project.id","operator":"=","value":' + temp + '}],"pagination":{"page":0,"size":30,"sorts":["updatedAt,desc"]}}'
+
+println queryProjectsParam
+
+GlobalVariable.queryProjectsParam = queryProjectsParam
+
 res = WS.sendRequest(findTestObject('get_test_run_list'))
+
+println jsonSlurper.parseText(res.getResponseBodyContent())
 
 def content = jsonSlurper.parseText(res.getResponseBodyContent()).content
 
@@ -64,4 +74,14 @@ GlobalVariable.schedule_test_id = content[0].id
 res = WS.sendRequest(findTestObject('execute_schedule_test'))
 
 println jsonSlurper.parseText(res.getResponseBodyContent())
+
+
+
+
+
+
+
+
+
+
 

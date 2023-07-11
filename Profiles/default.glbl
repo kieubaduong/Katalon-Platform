@@ -69,4 +69,9 @@
       <initValue>'oauth/token'</initValue>
       <name>login_url</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'{&quot;type&quot;:&quot;RunConfiguration&quot;,&quot;conditions&quot;:[{&quot;key&quot;:&quot;Project.id&quot;,&quot;operator&quot;:&quot;=&quot;,&quot;value&quot;:&quot;1174806&quot;}],&quot;pagination&quot;:{&quot;page&quot;:0,&quot;size&quot;:30,&quot;sorts&quot;:[&quot;updatedAt,desc&quot;]}}'</initValue>
+      <name>queryProjectsParam</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
