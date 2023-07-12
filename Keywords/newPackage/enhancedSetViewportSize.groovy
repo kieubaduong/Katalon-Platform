@@ -1,4 +1,4 @@
-package custom_keyword
+package newPackage
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -17,19 +17,27 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import org.openqa.selenium.WebDriver
+
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 import internal.GlobalVariable
+import org.openqa.selenium.remote.CapabilityType
+import org.openqa.selenium.remote.DesiredCapabilities
 
-public class enhancedSetViewportSize {
+
+
+
+public class ResizeScreenKeyword {
 	@Keyword
 	def enhancedSetViewportSize(int width, int height) {
 		WebDriver webDriver = DriverFactory.getWebDriver()
-		int browserWidthGap = webDriver.manage().window().getSize().width - Integer.parseInt(WebUiBuiltInKeywords.executeJavaScript('return (window.innerWidth || 0)', null).toString())
-		int browserHeightGap = webDriver.manage().window().getSize().height - Integer.parseInt(WebUiBuiltInKeywords.executeJavaScript('return (window.innerHeight || 0)', null).toString())
-		float ratio = Float.parseFloat(WebUiBuiltInKeywords.executeJavaScript('return (window.devicePixelRatio || 1)', null).toString())
+		int browserWidthGap = webDriver.manage().window().getSize().width - Integer.parseInt(WebUI.executeJavaScript('return (window.innerWidth || 0)', null).toString())
+		int browserHeightGap = webDriver.manage().window().getSize().height - Integer.parseInt(WebUI.executeJavaScript('return (window.innerHeight || 0)', null).toString())
+		float ratio = Float.parseFloat(WebUI.executeJavaScript('return (window.devicePixelRatio || 1)', null).toString())
 		int actualWidth = Math.round((width + browserWidthGap * ratio) / ratio)
 		int actualHeight = Math.round((height + browserHeightGap * ratio) / ratio)
-		WebUiBuiltInKeywords.setViewPortSize(actualWidth, actualHeight)
+		WebUI.setViewPortSize(actualWidth, actualHeight)
 	}
 }

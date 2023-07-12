@@ -21,7 +21,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://testops.katalon.io/')
 
-WebUI.click(findTestObject('Object Repository/Page_Katalon TestOps/div_Sign InSign UpBy signing in to Katalon _2d7b60'))
+CustomKeywords.'newPackage.ResizeScreenKeyword.enhancedSetViewportSize'(1000, 1000)
 
 WebUI.setText(findTestObject('Object Repository/Page_Katalon TestOps/input_Sign Up_username'), 'duong.kieu@katalon.com')
 
@@ -29,9 +29,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_Katalon TestOps/in
 
 WebUI.click(findTestObject('Object Repository/Page_Katalon TestOps/button_Sign in'))
 
-WebUI.setViewPortSize(1920, 1003)
-
-WebUI.takeScreenshotAsCheckpoint('Login Flow Test Run')
+WebUI.takeScreenshotAsCheckpoint('current_viewport')
 
 WebUI.closeBrowser()
 
