@@ -21,9 +21,9 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://testops.katalon.io/')
 
-CustomKeywords.'newPackage.ResizeScreenKeyword.enhancedSetViewportSize'(1920, 1003)
+CustomKeywords.'newPackage.ResizeScreenKeyword.enhancedSetViewportSize'(1920, 872)
 
-WebUI.setText(findTestObject('Object Repository/Page_Katalon TestOps/input_Sign Up_username'), 'duong.kieu@katalon.com')
+WebUI.setText(findTestObject('Object Repository/Page_Katalon TestOps/input_Sign Up_username'), 'duong.dep.trai@katalon.com')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_Katalon TestOps/input_Sign Up_password'), '9Sd1Uh1O/N8=')
 
